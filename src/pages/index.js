@@ -1,3 +1,36 @@
+// Imports:
+
+// Head from next/head: Manages document head elements (title, meta tags).
+// styles from styles/Home.module.css: Styles specific to this component.
+// DisplayImage from Components/DisplayImage: Component to display the image and its color palette.
+// ColorThief library: Used for extracting a color palette from an image.
+// useState hook: Manages component state.
+// State Variables:
+
+// uploadedImage: Stores the data URL of the uploaded image (initially null).
+// colorPalette: Stores the extracted color palette as an array of colors (initially null).
+// Functions:
+
+// uploadImage: Handles the image upload process:
+// Gets the selected file from the input event.
+// Creates a FileReader object to read the file content.
+// Defines an onload event handler for the reader:
+// Creates an Image object to hold the uploaded image.
+// Defines another onload event handler for the image:
+// Creates a ColorThief instance.
+// Extracts a palette of 6 colors using getPalette.
+// Updates uploadedImage with the image data URL.
+// Updates colorPalette with the extracted colors.
+// Starts reading the file as a data URL.
+// JSX Structure:
+
+// Renders the main layout using a fragment (<>).
+// Defines the document Head with title, meta tags, and Font Awesome icons for styling.
+// Renders a header with the application title and an image upload section.
+// The upload section uses a hidden file input element triggered by a label with an icon.
+// Renders a main section using the styles.main class.
+// Within the main section, it renders the DisplayImage component, passing the uploaded image data URL and the color palette as props.
+
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import DisplayImage from "@/Components/DisplayImage";
