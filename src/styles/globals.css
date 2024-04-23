@@ -37,8 +37,8 @@ header h1 {
   font-weight: 800;
 
   background: linear-gradient(110.42deg, #cf57a3 29.2%, #27ae60 63.56%);
-  /* -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
   text-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
 }
 header .input {
